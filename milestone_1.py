@@ -5,7 +5,9 @@ word_list = ["apple", "banana", "pear", "grapes", "strawberry"]
 word = random.choice(word_list)
 
 guess = input("Enter a single letter")
-allowed_characters = 'abcdefghijklmnopqrstuvwxyz'
+guess = guess.upper()
+
+allowed_characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 if len(guess)!=1:
     print("Oops! That is not a valid input.") 
